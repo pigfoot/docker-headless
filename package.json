@@ -1,0 +1,25 @@
+{
+  "name": "pigfoot-headless",
+  "version": "1.0.0",
+  "description": "Headless Chrome with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pigfoot/docker-headless.git"
+  },
+  "author": "pigfoot",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^3.3.0",
+    "puppeteer-extra": "^3.1.9",
+    "puppeteer-extra-plugin-adblocker": "^2.11.3",
+    "puppeteer-extra-plugin-block-resources": "^2.2.4",
+    "puppeteer-extra-plugin-recaptcha": "^3.1.10",
+    "puppeteer-har": "^1.1.2",
+    "chrome-har-capturer": "^0.13.7",
+    "aigle": "^1.14.1"
+  }
+}
