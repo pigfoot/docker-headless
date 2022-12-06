@@ -17,7 +17,7 @@ RUN apk update && apk add --no-cache git ca-certificates && update-ca-certificat
 # Create appuser
 RUN adduser -D -g '' appuser
 
-COPY --chown=chrome .npmrc package.json pnpm-lock.yaml .pnpmfile.cjs ./
+COPY --chown=chrome package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile --prod
 
 ###########################
