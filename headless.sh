@@ -8,7 +8,7 @@ TIMEOUT=10
     2>/dev/null 1>&2 &
 
 while :; do
-    res=$(wget -q -t 1 --spider localhost:9222 2>&1)
+    res=$(wget -q -t 1 --spider 127.0.0.1:9222 2>&1)
     status=$?
     if [ ${status} -eq 0 ]; then
         # this is not really expected unless a key lets you log in

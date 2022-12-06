@@ -10,7 +10,7 @@ Please use the 3 others ways to use Chrome Headless.
 
 Launch the container using:
 
-`docker container run -it --rm -v $(pwd)/src:/usr/src/app/src pigfoot/headless` and use the `--no-sandbox` flag for all your commands.
+`docker container run -it --rm -v $(pwd)/src:/app/src pigfoot/headless` and use the `--no-sandbox` flag for all your commands.
 
 Be careful to know the website you're calling.
 
@@ -19,7 +19,7 @@ Explanation for the `no-sandbox` flag in a [quick introduction here](https://www
 ## ✅ With `SYS_ADMIN` capability
 
 Launch the container using:
-`docker container run -it --rm --cap-add=SYS_ADMIN -v $(pwd)/src:/usr/src/app/src pigfoot/headless`
+`docker container run -it --rm --cap-add=SYS_ADMIN -v $(pwd)/src:/app/src pigfoot/headless`
 
 This allows to run Chrome with sandboxing but needs unnecessary privileges from a Docker point of view.
 
@@ -32,7 +32,7 @@ Thanks to ever-awesome Jessie Frazelle seccomp profile for Chrome. This is The m
 Also available here `wget https://raw.githubusercontent.com/jfrazelle/dotfiles/master/etc/docker/seccomp/chrome.json`
 
 Launch the container using:
-`docker container run -it --rm --security-opt seccomp=$(pwd)/chrome.json -v $(pwd)/src:/usr/src/app/src pigfoot/headless`
+`docker container run -it --rm --security-opt seccomp=$(pwd)/chrome.json -v $(pwd)/src:/app/src pigfoot/headless`
 
 # Run with HAR
 
