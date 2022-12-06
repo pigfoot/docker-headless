@@ -5,7 +5,8 @@ ENV PUPPETEER_EXECUTABLE_PATH /usr/bin/chromium-browser
 WORKDIR /usr/src/app
 
 # Install pnpm
-RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
+RUN apk add --no-cache tini curl && \
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
 COPY --chown=chrome .npmrc package.json pnpm-lock.yaml .pnpmfile.cjs ./
 RUN pnpm install --frozen-lockfile --prod
 COPY --chown=chrome . ./
