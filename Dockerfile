@@ -10,7 +10,7 @@ WORKDIR /app
 USER root
 
 # Build the command inside the container (You may fetch or manage dependencies here)
-RUN apk update && apk add --no-cache git ca-certificates && update-ca-certificates \
+RUN apk update && apk add --no-cache git ca-certificates && update-ca-certificates && \
     apk add --no-cache tini curl && \
     curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
 
