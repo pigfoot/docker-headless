@@ -24,4 +24,4 @@ while :; do
     sleep 1
 done
 
-/usr/src/app/node_modules/.bin/chrome-har-capturer -i ${1} 2> /dev/null
+/app/node_modules/.bin/chrome-har-capturer -i ${1} 2> /dev/null
