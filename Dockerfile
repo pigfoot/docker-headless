@@ -13,7 +13,7 @@ RUN apk upgrade --no-cache --available && apk add --no-cache git ca-certificates
     curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
 
 # Create appuser
-RUN mkdir -p app \
+RUN mkdir -p /app \
   && adduser -D -g '' appuser \
   && chown -R chrome:chrome /app
 
