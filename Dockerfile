@@ -13,10 +13,12 @@ RUN apk upgrade --no-cache --available && apk add --no-cache git ca-certificates
     curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
 
 # Create appuser
-#RUN adduser -D -g '' appuser
+RUN mkdir -p app \
+  && adduser -D -g '' appuser \
+  && chown -R chrome:chrome /app
 
 # Run as non-privileged
-USER chrome
+#USER chrome
 WORKDIR /app
 
 # Copy local code to the container image.
