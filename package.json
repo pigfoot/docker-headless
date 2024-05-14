@@ -15,8 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "chrome-har-capturer": "^0.13.10",
-    "puppeteer": "^21.0.3",
+    "chrome-har-capturer": "^0.14.0",
+    "puppeteer": "^22.8.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-block-resources": "^2.4.3",
