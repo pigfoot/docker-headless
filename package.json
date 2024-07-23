@@ -15,12 +15,15 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "chrome-har-capturer": "^0.14.0",
-    "puppeteer": "^22.8.1",
+    "chrome-har-capturer": "^0.14.1",
+    "puppeteer": "^22.13.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-block-resources": "^2.4.3",
     "puppeteer-extra-plugin-recaptcha": "^3.6.8",
-    "puppeteer-har": "^1.1.2"
+    "puppeteer-har": "^1.1.2",
+    "tough-cookie": "^4.1.4",
+    "debug": "^4.3.5",
+    "ws": "^8.18.0"
   }
 }
