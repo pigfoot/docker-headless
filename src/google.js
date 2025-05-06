@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const puppeteerExtra = require('puppeteer-extra');
-const puppeteerHar = require('puppeteer-har');
 const { execFile } = require('child_process');
 
 puppeteerExtra.use(require('puppeteer-extra-plugin-adblocker')({
@@ -37,8 +36,6 @@ function start() {
       const browser = await puppeteerExtra.launch(param_puppeteer);
       const page = await browser.newPage();
       await page.emulate(puppeteer.devices['iPhone XR']);
-      const har = new puppeteerHar(page);
-      await har.start({ path: './userData/google.har' });
 
       let title = await task(page, 'https://www.google.com/search?q=Weather');
 
@@ -49,7 +46,6 @@ function start() {
         format: "A4"
       });
 
-      await har.stop();
       await browser.close();
 
       resolve(title);

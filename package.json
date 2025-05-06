@@ -20,7 +20,6 @@
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-block-resources": "^2.4.3",
-    "puppeteer-extra-plugin-recaptcha-v4": "^4.0.9",
-    "puppeteer-har": "^1.1.2"
+    "puppeteer-extra-plugin-recaptcha-v4": "^4.0.9"
   }
 }

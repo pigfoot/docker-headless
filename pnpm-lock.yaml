@@ -29,9 +29,6 @@ importers:
       puppeteer-extra-plugin-recaptcha-v4:
         specifier: ^4.0.9
         version: 4.0.9(puppeteer-extra@3.3.6(puppeteer-core@23.11.1)(puppeteer@23.11.1))
-      puppeteer-har:
-        specifier: ^1.1.2
-        version: 1.1.2(puppeteer@23.11.1)
 
 packages:
 
@@ -206,9 +203,6 @@ packages:
     resolution: {integrity: sha512-0Qja9JLmG14hr/+8SvS/TZLcEdE2YmLHfrWas/g73aRnP/ulBeZW+YPfCQRHEU+bjXv1WBuGVcAK9qFOVJAt5A==}
     hasBin: true
 
-  chrome-har@0.11.12:
-    resolution: {integrity: sha512-Fi/YCoUHjQMQC0sPKCdiuGVbApeEwIUNvISrlwZgbuUcxfHJA6MjD4RsIH/YSOAo/Z3ENiF+xaEpsdqqdETIjg==}
-
   chrome-remote-interface@0.31.3:
     resolution: {integrity: sha512-NTwb1YNPHXLTus1RjqsLxJmdViKwKJg/lrFEcM6pbyQy04Ow2QKWHXyPpxzwE+dFsJghWuvSAdTy4W0trluz1g==}
     hasBin: true
@@ -251,18 +245,6 @@ packages:
   data-uri-to-buffer@6.0.2:
     resolution: {integrity: sha512-7hvf7/GW8e86rW0ptuwS3OcBGDjIi6SZva7hCyWC0yYry2cOPmLIjXAUHI6DK2HsnwJd9ifmt57i8eV2n4YNpw==}
     engines: {node: '>= 14'}
-
-  dayjs@1.8.31:
-    resolution: {integrity: sha512-mPh1mslned+5PuIuiUfbw4CikHk6AEAf2Baxih+wP5fssv+wmlVhvgZ7mq+BhLt7Sr/Hc8leWDiwe6YnrpNt3g==}
-
-  debug@4.1.1:
-    resolution: {integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==}
-    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
@@ -502,15 +484,8 @@ packages:
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
-  psl@1.15.0:
-    resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
-
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
-
-  punycode@2.3.1:
-    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
-    engines: {node: '>=6'}
 
   puppeteer-core@23.11.1:
     resolution: {integrity: sha512-3HZ2/7hdDKZvZQ7dhhITOUg4/wOrDRjyK2ZBllRB0ZCOi9u0cwq1ACHDjBB+nX+7+kltHjQvBRdeY7+W0T+7Gg==}
@@ -578,12 +553,6 @@ packages:
         optional: true
       puppeteer-core:
         optional: true
-
-  puppeteer-har@1.1.2:
-    resolution: {integrity: sha512-Z5zfoj8RkhUT9UbrrR8JjOHNnCr7sNINoeR346F40sLo/4zn+KX/sw/eoKNrtsISc1s/2YCZaqaSEVx6cZ8NQg==}
-    engines: {node: '>=7.6.0'}
-    peerDependencies:
-      puppeteer: '>=1.0.0'
 
   puppeteer@23.11.1:
     resolution: {integrity: sha512-53uIX3KR5en8l7Vd8n5DUv90Ae9QDQsyIthaUFVzwV6yU750RjqRznEtNMBT20VthqAdemnJN+hxVdmMHKt7Zw==}
@@ -669,10 +638,6 @@ packages:
   tldts-experimental@6.1.86:
     resolution: {integrity: sha512-X3N3+SrwSajvANDyIBFa6tf/nO0VoqaXvvINSnQkZMGbzNlD+9G7Xb24Mtk3ZBVZJRGY7UynAJJL8kRVt6Z46Q==}
 
-  tough-cookie@4.0.0:
-    resolution: {integrity: sha512-tHdtEpQCMrc1YLrMaqXXcj6AxhYi/xgit6mZu1+EDWUn+qhUf8wMQoFIy9NXuq23zAwtcB0t/MjACGR18pcRbg==}
-    engines: {node: '>=6'}
-
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
@@ -687,14 +652,6 @@ packages:
 
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
-
-  universalify@0.1.2:
-    resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
-    engines: {node: '>= 4.0.0'}
-
-  uuid@8.0.0:
-    resolution: {integrity: sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==}
-    hasBin: true
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -928,15 +885,6 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  chrome-har@0.11.12:
-    dependencies:
-      dayjs: 1.8.31
-      debug: 4.1.1
-      tough-cookie: 4.0.0
-      uuid: 8.0.0
-    transitivePeerDependencies:
-      - supports-color
-
   chrome-remote-interface@0.31.3:
     dependencies:
       commander: 2.11.0
@@ -983,12 +931,6 @@ snapshots:
       parse-json: 5.2.0
 
   data-uri-to-buffer@6.0.2: {}
-
-  dayjs@1.8.31: {}
-
-  debug@4.1.1:
-    dependencies:
-      ms: 2.1.3
 
   debug@4.4.0:
     dependencies:
@@ -1217,16 +1159,10 @@ snapshots:
 
   proxy-from-env@1.1.0: {}
 
-  psl@1.15.0:
-    dependencies:
-      punycode: 2.3.1
-
   pump@3.0.2:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
-
-  punycode@2.3.1: {}
 
   puppeteer-core@23.11.1:
     dependencies:
@@ -1295,13 +1231,6 @@ snapshots:
     optionalDependencies:
       puppeteer: 23.11.1
       puppeteer-core: 23.11.1
-    transitivePeerDependencies:
-      - supports-color
-
-  puppeteer-har@1.1.2(puppeteer@23.11.1):
-    dependencies:
-      chrome-har: 0.11.12
-      puppeteer: 23.11.1
     transitivePeerDependencies:
       - supports-color
 
@@ -1410,12 +1339,6 @@ snapshots:
     dependencies:
       tldts-core: 6.1.86
 
-  tough-cookie@4.0.0:
-    dependencies:
-      psl: 1.15.0
-      punycode: 2.3.1
-      universalify: 0.1.2
-
   tr46@0.0.3: {}
 
   tslib@2.8.1: {}
@@ -1429,10 +1352,6 @@ snapshots:
 
   undici-types@6.21.0:
     optional: true
-
-  universalify@0.1.2: {}
-
-  uuid@8.0.0: {}
 
   webidl-conversions@3.0.1: {}
 
