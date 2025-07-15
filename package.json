@@ -16,7 +16,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "chrome-har-capturer": "^0.14.2",
-    "puppeteer": "^23.11.1",
+    "puppeteer": "^24.12.1",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6",
     "puppeteer-extra-plugin-block-resources": "^2.4.3",
